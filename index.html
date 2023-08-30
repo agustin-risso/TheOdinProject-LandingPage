@@ -12,16 +12,14 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="home">
+			<div id="home">
 				<div class="header">
-					<div class="header-logo"><i class="bx bxs-dog"></i></div>
-					<div class="header-links">
-						<ul>
-							<li class="link">header link one</li>
-							<li class="link">header link two</li>
-							<li class="link">header link three</li>
-						</ul>
-					</div>
+					<a href="index.html"><i class="bx bxs-dog"></i></a>
+					<ul>
+						<a href="#information"><li class="link">Information</li></a>
+						<a href="#quote"><li class="link">Quote</li></a>
+						<a href="#call-to-action"><li class="link">Call to action</li></a>
+					</ul>
 				</div>
 				<div class="main">
 					<div class="about">
@@ -32,55 +30,58 @@
 						</p>
 						<button class="home-signup">Sign Up</button>
 					</div>
-					<div class="main-image">
-						<img src="./images/image1.jpg" alt="dog1" />
-					</div>
+					<img class="main-img" src="./images/image1.jpg" alt="dog1" />
 				</div>
 			</div>
-			<div class="information">
-				<div class="information-header">
-					<h2>Some random information</h2>
-				</div>
-				<div class="content-container">
-					<div class="content">
-						<img src="./images/image2.jpg" alt="dog2" />
-						<p>this is some subtext under an illustration or image</p>
+			<a href="#home">
+				<i class="bx bx-up-arrow-alt"></i>
+			</a>
+			<div class="sections">
+				<div id="information">
+					<div class="information-header">
+						<h2>Some random information.</h2>
 					</div>
-					<div class="content">
-						<img src="./images/image3.jpg" alt="dog3" />
-						<p>this is some subtext under an illustration or image</p>
+					<div class="content-container">
+						<div class="content">
+							<img src="./images/image2.jpg" alt="dog2" />
+							<p>this is some subtext under an illustration or image</p>
+						</div>
+						<div class="content">
+							<img src="./images/image3.jpg" alt="dog3" />
+							<p>this is some subtext under an illustration or image</p>
+						</div>
+						<div class="content">
+							<img src="./images/image4.jpg" alt="dog4" />
+							<p>this is some subtext under an illustration or image</p>
+						</div>
+						<div class="content">
+							<img src="./images/image5.jpg" alt="dog5" />
+							<p>this is some subtext under an illustration or image</p>
+						</div>
 					</div>
-					<div class="content">
-						<img src="./images/image4.jpg" alt="dog4" />
-						<p>this is some subtext under an illustration or image</p>
+				</div>
+				<div id="quote">
+					<div class="text-quote">
+						<p>
+							This is an ispiring quote, or a testimonial from a customer. Maybe
+							it's just a filling up space, or maybe people will actually read
+							it. Who knows? All I know is that it looks nice.
+						</p>
 					</div>
-					<div class="content">
-						<img src="./images/image5.jpg" alt="dog5" />
-						<p>this is some subtext under an illustration or image</p>
+					<div class="author-quote">
+						<p>-Thor, God of Thunder</p>
 					</div>
 				</div>
-			</div>
-			<div class="quote">
-				<div class="text-quote">
-					<p>
-						This is an ispiring quote, or a testimonial from a customer. Maybe
-						it's just a filling up space, or maybe people will actually read it.
-						Who knows? All I know is that it looks nice.
-					</p>
-				</div>
-				<div class="author-quote">
-					<p>-Thor, God of Thunder</p>
-				</div>
-			</div>
-			<div class="call-to-action">
-				<div class="cta-content">
-					<h3>Call to action! It's time!</h3>
-					<p>
-						Sign up for our product by clicking that button right over there!
-					</p>
-				</div>
-				<div class="button-container">
-					<button class="cta-signup">Sign Up</button>
+				<div id="call-to-action">
+					<div class="cta-content">
+						<h3>Call to action! It's time!</h3>
+						<p>
+							Sign up for our product by clicking that button right over there!
+						</p>
+					</div>
+					<div class="button-container">
+						<button class="cta-signup">Sign Up</button>
+					</div>
 				</div>
 			</div>
 			<div class="footer">

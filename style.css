@@ -5,4 +5,285 @@
 	padding: 0;
 	font-family: "Roboto", sans-serif;
 	box-sizing: border-box;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+#home {
+	width: 100vw;
+	height: 70vh;
+	background-color: #1f2937;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header {
+	width: 70%;
+	color: #f9faf8;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.header a {
+	text-decoration: none;
+	color: #f9faf8;
+}
+
+.header .bx {
+	font-size: 22px;
+	transition: all 0.4s;
+}
+
+.header .bx:hover {
+	font-size: 22px;
+	color: #4b5563;
+}
+
+.header ul {
+	font-weight: 300;
+	font-size: 18px;
+	color: #e5e7eb;
+	display: flex;
+	list-style: none;
+	gap: 25px;
+	text-decoration: none;
+}
+
+.header ul li {
+	transition: all 0.4s;
+}
+
+.header ul li:hover {
+	color: #4b5563;
+}
+
+.main {
+	width: 70%;
+	height: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+}
+
+.about {
+	width: 52%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 10px;
+}
+
+.about h1 {
+	color: #f9faf8;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 1000;
+	overflow: hidden;
+}
+
+.about p {
+	font-size: 18px;
+	color: #e5e7eb;
+	font-weight: 300;
+}
+
+.about button {
+	background-color: #3882f6;
+	color: #fff;
+	padding: 7px 35px;
+	font-size: 18px;
+	font-weight: 500;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.about button:hover {
+	background-color: #fff;
+	color: #3882f6;
+}
+.about button:active {
+	transform: scale(0.9);
+	cursor: default;
+}
+
+.main-img {
+	transform: scaleY(0.9);
+}
+
+.sections {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bx-up-arrow-alt {
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+	color: #1f2937;
+	font-size: 40px;
+	border: 2px solid #1f2937;
+	border-radius: 50%;
+	background-color: transparent;
+	transition: all 0.4s;
+}
+
+.bx-up-arrow-alt:hover {
+	color: #fff;
+	background-color: #1f2937;
+	cursor: pointer;
+}
+
+.bx-up-arrow-alt:active {
+	transform: scale(0.9);
+}
+
+#information {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 100%;
+	height: 70vh;
+}
+
+#information .information-header {
+	text-align: center;
+	overflow: hidden;
+}
+
+#information .information-header h2 {
+	color: #1f2937;
+	font-size: 36px;
+	font-weight: 1000;
+	margin: 50px 0;
+}
+
+#information .content-container {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	gap: 20px;
+	overflow: hidden;
+}
+
+#information .content-container .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	text-align: center;
+	width: 200px;
+	height: 220px;
+}
+
+#information .content-container .content img {
+	flex: 2;
+	border: 1px solid transparent;
+	border-radius: 12px;
+	width: 90%;
+}
+
+#information .content-container .content p {
+	width: 85%;
+	color: #4b5563;
+	font-size: 18px;
+}
+
+#quote {
+	background-color: #e5e7eb;
+	color: #1f2937;
+	width: 100%;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#quote .text-quote {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 300;
+	width: 860px;
+}
+
+#quote .author-quote {
+	color: #1f2937;
+	font-size: 25px;
+	font-weight: 600;
+	width: 860px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: end;
+}
+
+#call-to-action {
+	width: 70%;
+	margin: 100px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #3882f6;
+	padding: 50px 100px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+#call-to-action .cta-content h3 {
+	color: #fff;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+#call-to-action .cta-content p {
+	color: #e5e7eb;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#call-to-action .cta-signup {
+	width: 120px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 7px 30px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#call-to-action .cta-signup:hover {
+	background-color: #fff;
+	color: #3882f6;
+}
+#call-to-action .cta-signup:active {
+	transform: scale(0.9);
+	cursor: default;
+}
+
+.footer {
+	width: 100%;
+	background-color: #1f2937;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
 }
